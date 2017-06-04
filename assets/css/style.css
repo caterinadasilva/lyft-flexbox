@@ -1,0 +1,80 @@
+/*COLORES
+
+- Botones / hover _ #ff00bf;
+- Nav: #fff;
+- azul oscuro / letra / footer : #333447;
+- Títulos Form: #352384;
+- texto form: #729099;
+- gradiente morado: linear-gradient(#76278f, #2b1e66);
+*/
+
+/* Home Specific Classes */
+#hero {
+overflow: hidden;
+height: 100vh;
+width: 100%;
+/*background-image: url(../img/lyft-ph.jpg);*/
+background-size: cover;
+/*position: relative;*/
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: center;
+}
+#hero.flex-container {
+justify-content: flex-end;
+align-items: center;
+flex-wrap: wrap;
+}
+#hero .box {
+/*position: absolute;*/
+max-width: 500px;
+top: 35vh;
+right: 0;
+background-color: #fff;
+padding: 4em 3.5em 4em 3em;
+text-align: left;
+width: 100%;
+}
+.box.flex-container {
+flex-direction: column;
+}
+#hero h3 {
+color: #352384;
+}
+#hero p {
+text-transform: uppercase;
+font-size: 90%;
+color: #75726C;
+margin: 1.5em 0;
+}
+#hero .box span {
+/*display: block;*/
+font-size: 90%;
+margin-top: 1.5em;
+font-weight: 400;
+}
+#hero input {
+margin: 0;
+font-size: 100%;
+}
+#vid{
+position: absolute;
+  top: 50%; 
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%; 
+  min-height: 100%; 
+  width: auto; 
+  height: auto;
+  z-index: -1000; 
+  overflow: hidden;
+}
+#informacion {
+  background: -webkit-linear-gradient(180deg, rgb(118, 39, 143), rgb(43, 30, 102));
+  background: linear-gradient(180deg, rgb(118, 39, 143), rgb(43, 30, 102));
+}
+
+body > section {
+	height: 100vh;
+}
