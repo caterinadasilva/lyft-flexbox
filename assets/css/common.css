@@ -69,6 +69,12 @@ display: none !important;
 .no-bg {
 background: none !important;
 }
+.delay-1 {
+    transition-delay: 1s;
+}
+.delay-2 {
+    transition-delay: 1.5s;
+}
 
 
 /* FLEXBOX */
@@ -104,8 +110,9 @@ h6 {
 font-size: 1.35rem;
 }
 a {
-font-weight: 300;
+font-weight: 400;
 transition: .5s ease all;
+color: #729099;
 }
 a:hover, a:focus, a:active {
 color: #ff00bf;
@@ -122,7 +129,7 @@ font-weight: 700;
 color: #E54E79;
 }
 small {
-font-size: .8rem;
+font-size: .7rem;
 }
 form {
 font-size: 85%;
@@ -140,6 +147,7 @@ border: none;
 border-bottom: 1px solid #333447;
 line-height: 130%;
 padding: 1%;
+padding-left: 0;
 transition: .5s ease all;
 background: none;
 /*display: inline-block;*/f
@@ -148,7 +156,7 @@ font-size: 2rem;
 font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 }
 input::placeholder {
-color: #D1CEC7;
+color: #729099;
 font-weight: 300;
 }
 
@@ -179,7 +187,6 @@ font-size: 120%;
 background-color: #333447;
 border-color: #333447;
 transition: .5s ease all;
-box-shadow: 0 5px 5px rgba(117, 114, 108, 0.5);
 color: #fff;
 }
 .btn.special {
@@ -228,7 +235,6 @@ top: 0;
 left: 0;
 width: 100%;
 color: #fff;
-height: 80px;
 margin-top: 0;
 position: fixed;
 padding-top: 0;
@@ -280,13 +286,13 @@ nav ul li a.btn:first-child {
 nav.no-bg ul li a {
     color: #fff;
 }
-nav.no-bg ul li a#signUpBtn {
-transition: opacity 0.6s cubic-bezier(0.7, 0.01, 0.3, 1), height 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
-height: 0;
+nav ul li a#signUpBtn.hidden-btn {
+transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1), font 0.2s cubic-bezier(0.7, 0.01, 0.3, 1);
 width: 0;
 padding: 0;
 opacity: 0;
 color: transparent;
+font-size: 0;
 }
 nav ul li a#signUpBtn {
  color: #ff00bf;   
@@ -298,7 +304,7 @@ background: #ff00bf;
 .menu {
 max-width: 95%;
 margin: 0 auto;
-height: 60px;
+height: 80px;
 }
 .flex-container.menu {
 justify-content: space-between;
@@ -331,8 +337,11 @@ footer a {
     text-decoration: none;
 }
 footer ul li a {
-    padding: 2em 0;
+    padding: 1em 0;
     display: inline-block;
+}
+footer ul li h6 a {
+    padding: 0 0 1em;
 }
 footer .flex-container {
     flex-direction: column;
