@@ -45,6 +45,7 @@
 		// VERIFICACIÓN DE CAMPO OBLIGATORIO
 		if (name === "") {
 			document.getElementsByClassName('form-input')[0].appendChild(labelErr());
+			document.getElementsByClassName('form-input')[0].classList.add('error');
 			console.log("Nombre:" + name);
 			validaciones = validaciones && false;
 		} else {
@@ -56,12 +57,14 @@
 		// VERIFICACIÓN DE CAMPOS VACÍOS	
 		if (email === "") {
 			document.getElementsByClassName('form-input')[1].appendChild(labelErr());
+			document.getElementsByClassName('form-input')[1].classList.add('error');
 			console.log("Correo: " + email);
 			validaciones = validaciones && false;
 		}
 		// VERIFICACIÓN DE CARACTERES REQUERIDOS
 		else if(!validEmail.test(email)) {
 			document.getElementsByClassName('form-input')[1].appendChild(labelErr());
+			document.getElementsByClassName('form-input')[1].classList.add('error');
 			console.log("Correo: " + email + ". Tiene caracteres no permitidos.");
 			validaciones = validaciones && false;
 		}
@@ -74,12 +77,14 @@
 		// VERIFICACIÓN DE CAMPOS VACÍOS	
 		if (phone === "") {
 			document.getElementsByClassName('form-input')[2].appendChild(labelErr());
+			document.getElementsByClassName('form-input')[2].classList.add('error');
 			console.log("Phone: " + phone);
 			validaciones = validaciones && false;
 		}
 		// VERIFICACIÓN DE CARACTERES REQUERIDOS
 		else if(!validPhone.test(phone)) {
 			document.getElementsByClassName('form-input')[2].appendChild(labelErr());
+			document.getElementsByClassName('form-input')[2].classList.add('error');
 			console.log("Teléfono: " + phone + ". Tiene caracteres no permitidos.");
 			validaciones = validaciones && false;
 		}
@@ -92,6 +97,7 @@
 		// VERIFICACIÓN DE CAMPO OBLIGATORIO	
 		if (city === "") {
 			document.getElementsByClassName('form-input')[3].appendChild(labelErr());
+			document.getElementsByClassName('form-input')[3].classList.add('error');
 			console.log("Ciudad:" + city);
 			validaciones = validaciones && false;
 		} else {
